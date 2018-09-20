@@ -1,8 +1,10 @@
 const MongoClient = require('mongodb').MongoClient;
 
-const hostName = 'localhost';
-const port = 27017;
-const url = `mongodb://${hostName}:${port}/inventorycontrol`;
+const hostName = 'ds111063.mlab.com';
+const port = 11063;
+const user = 'heroku_user';
+const pass = 'heroku_pass1';
+const url = `mongodb://${user}:${pass}@${hostName}:${port}/heroku_hsfnf3ds`;
 
 const connect = function (callback, options = {}) {
   MongoClient.connect(url, { useNewUrlParser: true }, (err, db) => {
