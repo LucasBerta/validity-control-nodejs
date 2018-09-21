@@ -1,8 +1,8 @@
 const Http = require('./src/core/http');
 require('./src/routes/routes');
 
-const hostname = '192.168.1.107';
-const port = 3000;
+const hostname = window.location.hostname;
+const port = window.location.port;
 
 Http.listen(port, hostname, () => {
   console.log(`Server running at http://${hostname}:${port}/api/`);
