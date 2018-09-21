@@ -6,7 +6,8 @@ const user = 'heroku_user';
 const pass = 'heroku_pass1';
 const url = `mongodb://${user}:${pass}@${hostName}:${port}/heroku_hsfnf3ds`;
 
-const connect = function (callback, options = {}) {
+const connect = function (callback, options) {
+  options = options || {};
   MongoClient.connect(url, { useNewUrlParser: true }, (err, db) => {
     if (err) throw err;
     if (callback) {

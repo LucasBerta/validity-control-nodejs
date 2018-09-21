@@ -1,7 +1,7 @@
 {
-  "name": "inventory-control",
+  "name": "valdity-control",
   "version": "1.0.0",
-  "description": "Api for control inventory app",
+  "description": "Api for control valdity app",
   "main": "app.js",
   "author": "",
   "license": "MIT",
