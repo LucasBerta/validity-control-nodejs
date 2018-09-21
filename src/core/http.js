@@ -4,6 +4,7 @@ const bodyParser = require('body-parser');
 const Http = express();
 
 Http.use(bodyParser.json());
+Http.use(express.static('./'));
 Http.use((req, res, next) => {
   res.setHeader('Access-Control-Allow-Origin', '*');
   res.setHeader('Access-Control-Allow-Methods', 'GET, POST');
